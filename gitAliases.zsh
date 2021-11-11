@@ -13,3 +13,9 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 # alias ge='git-edit-new'
 alias unstage="git restore --staged ."
 alias stash="git stash -u"
+
+# more aliases
+# loll = log --graph --decorate --pretty=oneline --abbrev-commit
+# lol = !git --no-pager loll
+# lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
+# lola = !git --no-pager lolal
