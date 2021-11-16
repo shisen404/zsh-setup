@@ -149,6 +149,9 @@ alias mv='mv -i'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias rr="rm -rf"
+alias hosts="cat /etc/hosts"
+alias ehosts="sudo $EDITOR /etc/hosts"
 # Recursively remove .DS_Store files | Enable for MacOS
 # alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
