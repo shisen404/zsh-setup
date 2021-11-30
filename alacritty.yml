@@ -12,6 +12,15 @@ window:
     x: 5
     y: 2
 
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+
 cursor:
   # Cursor style
   style:
