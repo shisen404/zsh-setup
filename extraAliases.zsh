@@ -18,3 +18,8 @@ open(){
 function mk() {
   mkdir -p "$@" && cd "$@"
 }
+
+# Open man page as PDF | For MacOS
+function manpdf() {
+ man -t "${1}" | open -f -a /System/Applications/Preview.app
+}
