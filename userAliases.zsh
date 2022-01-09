@@ -15,7 +15,23 @@ alias c='clear'
 alias azsh='atom ~/.zshrc'
 alias gzsh='gedit ~/.zshrc'
 
-# alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
+# updates
+alias update='sudo pacman -Syyu && paru -Syyu'
+alias um='sudo pacman-mirrors --fasttrack'
+
+# Uncomment for Mac systems
+# Update App Store apps
+# alias sup='sudo softwareupdate -i -a'
+
+# Update Homebrew (Cask) & packages
+# alias update='brew update && brew upgrade && brew autoremove'
+
+# Brew Doctor for troubleshooting
+# alias fix='brew doctor'
+
+alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
+# enable below for macos
+# alias getpath="find . -type f | fzf | sed 's/^..//' | tr -d '\n' | pbcopy -selection c"
 
 alias wttr='curl wttr.in/bengaluru'
 
@@ -27,7 +43,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 # Recursively remove .DS_Store files | Enable for MacOS
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
-alias getpath="find . -type f | fzf | sed 's/^..//' | tr -d '\n' | pbcopy -selection c"
 
 # Network
 # alias ipp="curl -s ipinfo.io | jq -r '.ip'"
@@ -38,27 +53,4 @@ alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
 alias cin="pbcopy -selection c"
 alias cout="pbcopy -selection Clipboard -o"
 
-
-# Clipboard
-alias cin="xclip -selection c"
-alias cout="xclip -selection Clipboard -o"
-
-# Recursively remove .DS_Store files | Enable for MacOS
-alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
-
 # alias week="date +%V"
-
-
-alias update='sudo pacman -Syyu && paru -Syyu'
-alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
-alias wttr='curl wttr.in/bengaluru'
-alias um='sudo pacman-mirrors --fasttrack'
-# Uncomment for Mac systems
-# Update App Store apps
-# alias sup='sudo softwareupdate -i -a'
-
-# Update Homebrew (Cask) & packages
-# alias update='brew update && brew upgrade && brew autoremove'
-
-# Brew Doctor for troubleshooting
-# alias fix='brew doctor'
