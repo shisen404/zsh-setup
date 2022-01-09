@@ -1,4 +1,5 @@
 # zsh-setup  
+```
 Dot file collection for nix based systems | Arch and MacOS oriented  
 zshrc -> contains primary configs and sourcing other custom files  
 userAliases  -> contasins user based one line aliases  
@@ -8,3 +9,4 @@ gitAliases   -> git based aliases
 alacritty    -> alacritty terminal configs  
 explorer     -> terminal based explorer  
 clearUp      -> clear ram and pacman related cache  
+```
