@@ -44,6 +44,10 @@ alias ....="cd ../../.."
 # Recursively remove .DS_Store files | Enable for MacOS
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
+# mvn aliases
+alias mco="mvn clean compile"
+alias mci="mvn clean install"
+
 # Network
 # alias ipp="curl -s ipinfo.io | jq -r '.ip'"
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
