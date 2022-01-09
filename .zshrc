@@ -131,15 +131,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# user aliases
-# alias ls='exa'
-alias update='sudo pacman -Syyu && paru -Syyu'
-alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
-alias wttr='curl wttr.in/bengaluru'
-alias um='sudo pacman-mirrors --fasttrack'
-
-# alias week="date +%V"
-
 source ~/explorer.zsh
 source ~/extraAliases.zsh
 source ~/gitAliases.zsh
