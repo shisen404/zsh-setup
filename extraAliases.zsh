@@ -24,3 +24,7 @@ alias cout="xclip -selection Clipboard -o"
 function mk() {
   mkdir -p "$@" && cd "$@"
 }
+
+# mvn aliases
+alias mco="mvn clean compile"
+alias mci="mvn clean install"
