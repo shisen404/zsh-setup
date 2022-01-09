@@ -14,17 +14,7 @@ open(){
   xdg-open "$(find -type f | fzf)"
 }
 
-alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
-
-#Clipboard
-alias cin="xclip -selection c"
-alias cout="xclip -selection Clipboard -o"
-
 # Create a new directory and enter it
 function mk() {
   mkdir -p "$@" && cd "$@"
 }
-
-# mvn aliases
-alias mco="mvn clean compile"
-alias mci="mvn clean install"
